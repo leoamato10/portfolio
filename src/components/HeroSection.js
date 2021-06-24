@@ -161,9 +161,8 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PText>
-              Trabajo como diseñador y desarrollador web autónomo durante 4
-              años. Me encanta diseñar y crear nuevas experiencias web para
-              personas.
+              Trabajo como desarrollador web autónomo durante 4 años. Me encanta
+              diseñar y crear nuevas experiencias web para personas.
             </PText>
             <Button btnText="see my works" btnLink="/projects" />
           </div>
