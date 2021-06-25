@@ -162,8 +162,9 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PHighlightText>
-              Im a React Native developer. I love to create mobile apps that
-              change peoples lives.
+              Im a React Native developer and love to create mobile apps that
+              change peoples lives. My goal is to become a team lider of
+              development software company.
             </PHighlightText>
             <Button btnText="see my works" btnLink="/projects" />
           </div>
