@@ -5,6 +5,7 @@ import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import PText from './PText';
+import PHighlightText from './PHighlightText';
 
 const HeroStyles = styled.div`
   .hero {
@@ -154,16 +155,16 @@ export default function HeroSection() {
         <div className="container">
           <h1 className="hero__heading">
             <span>Hello, This is</span>
-            <span className="hero__name">Leo Amato</span>
+            <span className="hero__name">Leonardo Amato</span>
           </h1>
           <div className="hero__img">
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <PText>
-              Trabajo como desarrollador web autónomo durante 4 años. Me encanta
-              diseñar y crear nuevas experiencias web para personas.
-            </PText>
+            <PHighlightText>
+              Im a React Native developer. I love to create mobile apps that
+              change peoples lives.
+            </PHighlightText>
             <Button btnText="see my works" btnLink="/projects" />
           </div>
           <div className="hero__social">
