@@ -20,7 +20,8 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -4rem;
+    margin-top: 18rem;
+    margin-bottom: 2rem;
     position: relative;
     span {
       display: inline-block;
@@ -40,7 +41,8 @@ const HeroStyles = styled.div`
     border: 2px solid var(--gray-1);
   }
   .hero__info {
-    margin-top: -18rem;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
   }
   .hero__social,
   .hero__scrollDown {
@@ -162,8 +164,8 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <PHighlightText>
-              Im a React Native developer and love to create mobile apps that
-              change peoples lives. My goal is to become a team lider of
+              Im a React Native developer who loves to create mobile apps that
+              changes people lifes. My goal is to become a team lider of a
               development software company.
             </PHighlightText>
             <Button btnText="see my works" btnLink="/projects" />
