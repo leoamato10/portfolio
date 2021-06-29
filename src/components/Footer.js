@@ -60,7 +60,7 @@ export default function Footer() {
           <h1 className="footer__col1__title">Leonardo Amato</h1>
           <PText>
             A mobile developer from Mendoza, Argentina. I always focus on
-            achieve simpler solutions for smart people :).
+            achieve simpler solutions for smart people :)
           </PText>
         </div>
         <div className="footer__col2">
@@ -125,14 +125,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="copyright">
-        <div className="container">
-          <PText>
-            © 2021 - Ayan Khan | Designed By{' '}
-            <a target="_blank" rel="noreferrer" href="http://webcifar.com">
-              web cifar
-            </a>{' '}
-          </PText>
-        </div>
+        <div className="container" />
       </div>
     </FooterStyle>
   );
