@@ -4,7 +4,6 @@ import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
-import PText from './PText';
 import PHighlightText from './PHighlightText';
 
 const HeroStyles = styled.div`
