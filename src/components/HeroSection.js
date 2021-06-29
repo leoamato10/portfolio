@@ -166,7 +166,7 @@ export default function HeroSection() {
             <PHighlightText>
               Im a React Native developer who loves to create mobile apps that
               changes people lifes. My goal is to become a team lider of a
-              development software company.
+              software development company.
             </PHighlightText>
             <Button btnText="see my works" btnLink="/projects" />
           </div>
@@ -179,25 +179,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    FB
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://twitter.com/webcifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    TW
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://isntagram.com/web_cifar"
+                    href="https://www.instagram.com/leoandresamato/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -206,7 +188,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://webcifar.com"
+                    href="https://www.linkedin.com/in/leonardoamato/"
                     target="_blank"
                     rel="noreferrer"
                   >

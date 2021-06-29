@@ -57,11 +57,10 @@ export default function Footer() {
     <FooterStyle>
       <div className="container">
         <div className="footer__col1">
-          <h1 className="footer__col1__title">Ayan Khan</h1>
+          <h1 className="footer__col1__title">Leonardo Amato</h1>
           <PText>
-            A freelance web designer and developer from Chittagong, Bangladesh.
-            I always make websites that have unique designs and also has a good
-            performance rate.
+            A mobile developer from Mendoza, Argentina. I always focus on
+            achieve simpler solutions for smart people :).
           </PText>
         </div>
         <div className="footer__col2">
@@ -96,35 +95,30 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+88012312',
-                link: 'tel:+88012312',
+                title: '+5492615910502',
+                link: 'https://wa.link/9dv88h',
               },
               {
-                title: 'webcifar@gmail.com',
-                link: 'mailto:webcifar@gmail.com',
+                title: 'amatoleonardo1986@gmail.com',
+                link: 'mailto:amatoleonardo1986@gmail.com',
               },
               {
-                title: 'GEC Circle, Chittagong, Bangladesh',
-                link: 'http://google.com/maps',
+                title: 'Mendoza, Argentina',
               },
             ]}
           />
         </div>
         <div className="footer__col4">
           <FooterCol
-            heading="social Links"
+            heading="Social Links"
             links={[
               {
-                title: 'Facebook',
-                link: 'http://facebook.com',
-              },
-              {
-                title: 'Twitter',
-                link: 'http://twitter.com',
-              },
-              {
                 title: 'Instagram',
-                link: 'http://instagram.com',
+                link: 'https://www.instagram.com/leoandresamato/',
+              },
+              {
+                title: 'Linkedin',
+                link: 'https://www.linkedin.com/in/leonardoamato/',
               },
             ]}
           />
