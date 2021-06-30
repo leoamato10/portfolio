@@ -12,6 +12,7 @@ const AboutSectionStyles = styled.div`
     align-items: center;
     justify-content: flex-start;
     text-align: left;
+    padding-top: 13rem;
   }
   .aboutSection__left,
   .aboutSection__right {

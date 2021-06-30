@@ -60,7 +60,7 @@ export default function Footer() {
           <h1 className="footer__col1__title">Leonardo Amato</h1>
           <PText>
             A mobile developer from Mendoza, Argentina. I always focus on
-            achieve simpler solutions for smart people :)
+            achieving simpler solutions for smart people :)
           </PText>
         </div>
         <div className="footer__col2">

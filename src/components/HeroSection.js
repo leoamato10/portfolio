@@ -16,6 +16,7 @@ const HeroStyles = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+    padding-top: 13rem;
   }
   .hero__heading {
     font-size: 2rem;
@@ -103,7 +104,8 @@ const HeroStyles = styled.div`
     }
     .hero__heading {
       font-size: 1.4rem;
-      margin-bottom: -3rem;
+      margin-bottom: 3rem;
+      margin-top: 0;
       .hero__name {
         font-size: 4.5rem;
       }
@@ -164,7 +166,7 @@ export default function HeroSection() {
           <div className="hero__info">
             <PHighlightText>
               Im a React Native developer who loves to create mobile apps that
-              changes people lifes. My goal is to become a team lider of a
+              changes people lives. My goal is to become a team lider of a
               software development company.
             </PHighlightText>
             <Button btnText="see my works" btnLink="/projects" />
