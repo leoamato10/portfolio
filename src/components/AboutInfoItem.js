@@ -9,6 +9,7 @@ const AboutItemStyles = styled.div`
   position: relative;
   /* gap: 5rem; */
   margin-top: 3rem;
+
   .title {
     font-size: 2.4rem;
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './Button';
+import Button from './ButtonE';
 import PText from './PText';
 
 const ContactBannerStyles = styled.div`
@@ -27,9 +27,9 @@ export default function ContactBanner() {
     <ContactBannerStyles>
       <div className="container">
         <div className="contactBanner__wrapper">
-          <PText>Have a project in mind</PText>
-          <h3 className="contactBanner__heading">Let me help you</h3>
-          <Button btnText="Contact Now" btnLink="/contact" />
+          {/* <PText>Have a project in mind</PText> */}
+          <h3 className="contactBanner__heading">Lets talk</h3>
+          <Button btnText="Contact Now" btnLink="https://wa.link/9dv88h" />
         </div>
       </div>
     </ContactBannerStyles>

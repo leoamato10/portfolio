@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
+import Button from '../components/ButtonE';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItems from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
@@ -83,29 +83,32 @@ export default function About() {
               <p className="about__subheading">
                 Hi, I am <span>Leonardo Amato</span>
               </p>
-              <h2 className="about__heading">A freelance Web developer</h2>
+              <h2 className="about__heading">
+                A React Native Mobile developer
+              </h2>
               <div className="about__info">
                 <PText>
-                  I am from Mendoza, Argentina. A place of beauty and nature.
-                  Since my childhood, i love art and design. I always try to
-                  design stuff with my unique point of view. I also love to
-                  create things that can be usefull to others.
+                  I am from Mendoza, Argentina. A place of beauty and nature
+                  around the Mountains. Since my childhood, I love computers and
+                  technology. For diferent things that happened in my life I
+                  ended up estudying business related career (still loving it)
+                  but in the last years I realized that the thing I really
+                  wanted to do was to become a software developer.
                   <br /> <br />
-                  I started coding since I was in high school. Coding is also an
-                  art for me. I love it and now I have the opportunity to design
-                  along with the coding. I find it really interesting and I
-                  enjoyed the process a lot.
+                  I started learning how to code about two years ago with
+                  youtube tutorials and Udemy courses. I went from zero to
+                  intermmediate level, now I can happily say that I´m coding my
+                  first apps. I am a true believer that technology came to
+                  improve people's lives and I want to be part of that process.
                   <br />
                   <br />
-                  My vision is to make the world a better place. Now almost
-                  everything is becoming better than ever. It is time for us to
-                  create more good stuff that helps the world to become a better
-                  place.
+                  My vision is to join a company that really works as a team and
+                  does stuff that makes big changes in our world.
                 </PText>
               </div>
               <Button
                 btnText="Download CV"
-                btnLink="https://drive.google.com/file/d/1KyQ3ZNIejUvx8XGVvx4a7sCxfp4lnWpw/view?usp=sharing"
+                btnLink="https://drive.google.com/uc?export=download&id=1KyQ3ZNIejUvx8XGVvx4a7sCxfp4lnWpw"
               />
             </div>
             <div className="right">
@@ -117,35 +120,74 @@ export default function About() {
               <h1 className="about__info__heading">Education</h1>
 
               <AboutInfoItems
-                title="School"
-                items={['Nasirabad Govt. High School, Chattogram']}
+                title=" Primary"
+                items={['Juan de Coria Bohórquez - 1993 to 1999']}
+              />
+              <AboutInfoItems
+                title="Secondary"
+                items={[
+                  'Graduated in Economy and Business Management / I.S.E.P - 2000 to 2004',
+                ]}
               />
               <AboutInfoItems
                 title="Collage"
-                items={['BAF Shaheen College Chattogram']}
+                items={[
+                  'Computer Sciences Engineering / Mendoza University - 2005 to 2007',
+                ]}
+              />
+              <AboutInfoItems
+                title="Collage"
+                items={[
+                  'Bachelor’s Degree in Business Administration / Pontificia Católica Argentina University UCA - 2008 to 2013',
+                ]}
               />
               <AboutInfoItems
                 title="Varsity"
-                items={['University Of Chitiagong']}
+                items={[
+                  'Master of Business Administration (MBA) / Francisco de Vitoria University (Madrid) - 2014 to 2016',
+                ]}
               />
             </div>
             <div className="about__info__item">
-              <h1 className="about__info__heading">My Skills</h1>
+              <h1 className="about__info__heading">Main Skills</h1>
 
               <AboutInfoItems
                 title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
+                items={[
+                  'HTML',
+                  'CSS',
+                  'JavaScript',
+                  'ReactJs',
+                  'React Native',
+                  'Redux',
+                  'React Navigation',
+                  'Others',
+                ]}
               />
-              <AboutInfoItems
-                title="BackEnd"
-                items={['Node', 'Express', 'PHP']}
-              />
+
               <AboutInfoItems
                 title="Design"
-                items={['Photoshop', 'After Effects', 'Figma']}
+                items={[
+                  'Photoshop',
+                  'After Effects',
+                  'Premiere',
+                  'Illustrator',
+                  'more...',
+                ]}
+              />
+
+              <AboutInfoItems
+                title="Others"
+                items={[
+                  'Git',
+                  'Command prompt',
+                  'Premiere',
+                  'Illustrator',
+                  'more...',
+                ]}
               />
             </div>
-            <div className="about__info__item">
+            {/* <div className="about__info__item">
               <h1 className="about__info__heading">Experiences</h1>
 
               <AboutInfoItems
@@ -160,7 +202,7 @@ export default function About() {
                 title="2016-"
                 items={['Freelance web Developer']}
               />
-            </div>
+            </div> */}
           </div>
         </div>
         <ContactBanner />
