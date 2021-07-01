@@ -161,7 +161,7 @@ export default function About() {
                   'React Native',
                   'Redux',
                   'React Navigation',
-                  'Others',
+                  'more...',
                 ]}
               />
 
@@ -181,9 +181,10 @@ export default function About() {
                 items={[
                   'Git',
                   'Command prompt',
-                  'Premiere',
-                  'Illustrator',
-                  'more...',
+                  'API Rest',
+                  'Expo / React Native CLI',
+                  'Native Base / React Native Paper',
+                  'Others..',
                 ]}
               />
             </div>
