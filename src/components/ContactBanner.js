@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from './ButtonE';
-import PText from './PText';
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
