@@ -30,7 +30,7 @@ const HeroStyles = styled.div`
     .hero__name {
       font-family: 'Montserrat SemiBold';
       font-size: 7rem;
-      color: var(--white);
+      color: #4f8aba;
     }
   }
   .hero__img {
@@ -196,13 +196,22 @@ export default function HeroSection() {
                     LI
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/leonardoamato/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GH
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
-          <div className="hero__scrollDown">
+          {/* <div className="hero__scrollDown">
             <p>Scroll</p>
             <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
-          </div>
+          </div> */}
         </div>
       </div>
     </HeroStyles>

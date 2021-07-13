@@ -8,9 +8,9 @@ import CavinImg from '../images/cavinimg.jpg';
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
+    name: 'Climbing Loc',
     desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
+      'Climbing Loc helps people to find the most suitable climbing spot. Features: Gps, Navigation, Authentication, Global State, maps, more...',
     img: UTrackerImg,
   },
   {

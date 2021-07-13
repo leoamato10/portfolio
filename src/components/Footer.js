@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
         <div className="footer__col2">
           <FooterCol
-            heading="Important Links"
+            heading="Menu"
             links={[
               {
                 title: 'Home',
@@ -119,6 +119,10 @@ export default function Footer() {
               {
                 title: 'Linkedin',
                 link: 'https://www.linkedin.com/in/leonardoamato/',
+              },
+              {
+                title: 'GitHub',
+                link: 'https://github.com/leoamato10',
               },
             ]}
           />

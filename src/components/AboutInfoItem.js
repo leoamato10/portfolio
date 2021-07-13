@@ -9,6 +9,7 @@ const AboutItemStyles = styled.div`
   position: relative;
   /* gap: 5rem; */
   margin-top: 3rem;
+  /* background-color: yellow; */
 
   .title {
     font-size: 2.4rem;
@@ -17,12 +18,15 @@ const AboutItemStyles = styled.div`
     display: flex;
     gap: 1.5rem;
     position: absolute;
+    width: 80%;
     left: 18rem;
+    background-color: green;
   }
   .item {
     background-color: var(--deep-dark);
     padding: 1rem;
     border-radius: 8px;
+    width: 80%;
   }
   @media only screen and (max-width: 768px) {
     flex-direction: column;

@@ -32,7 +32,7 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<MdDesktopMac />}
             title="Intra & Interpersonal skills"
-            desc="Me considero una persona centrada y empatica con buenas habilidades de comunicacion y apoyo al equipo. Un equipo contento siempre dará mejores resultados."
+            desc="I consider myself a focused and empathetic person with good communication skills and team support. A happy team will always give better results."
           />
           <ServicesSectionItem
             icon={<MdCode />}
@@ -42,7 +42,7 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<MdPhonelinkSetup />}
             title="Proactive and Business oriented"
-            desc="El codigo es solo una parte del desarrollo. Siempre tengo en cuenta la solucion que estamos brindando y para quien lo estamos haciendo."
+            desc="The code is only part of the development. I always keep in mind the solution we are providing and for whom we are doing it."
           />
         </div>
       </div>
