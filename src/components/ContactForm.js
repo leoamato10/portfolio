@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import emailjs from 'emailjs-com';
 
 const FormStyle = styled.form`
   width: 100%;
@@ -40,49 +41,71 @@ const FormStyle = styled.form`
 `;
 
 export default function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [sendResult, setSendResult] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_aw0fvr9',
+        'template_nyuo1ov',
+        e.target,
+        'user_cXmdEUA3q0wBmUc3mFN1t'
+      )
+      .then(
+        (result) => {
+          setSendResult('Your message was sent.');
+        },
+        (error) => {
+          setSendResult('Something went wrong.');
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <>
-      <FormStyle>
-        <div className="form-group">
-          <label htmlFor="name">
-            Your Name
+      <FormStyle onSubmit={sendEmail}>
+        <div className="row pt-5 mx-auto">
+          <div className="col-8 form-group mx-auto">
             <input
               type="text"
-              id="name"
+              className="form-control"
+              placeholder="Name"
               name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
             />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">
-            Your Name
+          </div>
+          <div className="col-8 form-group pt-2 mx-auto">
             <input
               type="email"
-              id="email"
+              className="form-control"
+              placeholder="Email Address"
               name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
             />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">
-            Your message
+          </div>
+
+          <div className="col-8 form-group pt-2 mx-auto">
             <textarea
-              type="text"
-              id="message"
+              className="form-control"
+              id=""
+              cols="30"
+              rows="8"
+              placeholder="Your message"
               name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
             />
-          </label>
+          </div>
+          <div className="col-8 pt-3 mx-auto">
+            <button type="submit" className="btn btn-info" value="Send Message">
+              Send Message
+            </button>
+          </div>
+          <div>
+            {sendResult ? (
+              <h3 style={{ color: 'red', paddingTop: 15 }}>{sendResult}</h3>
+            ) : null}
+          </div>
         </div>
-        <button type="submit">Send</button>
       </FormStyle>
     </>
   );

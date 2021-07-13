@@ -1,15 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import PText from './PText';
+import PTextAboutItems from './PTextAboutItems';
 
 const AboutItemStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  /* gap: 5rem; */
+  gap: 5rem;
   margin-top: 3rem;
-  /* background-color: yellow; */
 
   .title {
     font-size: 2.4rem;
@@ -18,15 +17,14 @@ const AboutItemStyles = styled.div`
     display: flex;
     gap: 1.5rem;
     position: absolute;
-    width: 80%;
+    width: 100%;
     left: 18rem;
-    background-color: green;
   }
   .item {
     background-color: var(--deep-dark);
     padding: 1rem;
     border-radius: 8px;
-    width: 80%;
+    width: 100%;
   }
   @media only screen and (max-width: 768px) {
     flex-direction: column;
@@ -36,6 +34,10 @@ const AboutItemStyles = styled.div`
       position: initial;
       gap: 1rem;
     }
+    .item {
+      width: 100%;
+    }
+
     .title {
       font-size: 2rem;
     }
@@ -52,7 +54,7 @@ export default function AboutInfoItem({
       <div className="items">
         {items.map((item, index) => (
           <div className="item" key={index}>
-            <PText>{item}</PText>
+            <PTextAboutItems>{item}</PTextAboutItems>
           </div>
         ))}
       </div>

@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/ButtonE';
 import AboutImg from '../assets/images/about-page-img.png';
-import AboutInfoItems from '../components/AboutInfoItem';
+import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
-
   .top-section {
     display: flex;
     align-items: center;
@@ -47,13 +46,16 @@ const AboutPageStyles = styled.div`
   }
   .about__info__items {
     margin-top: 15rem;
+    width: 100%;
   }
   .about__info__item {
     margin-bottom: 10rem;
+    width: 100%;
   }
   .about__info__heading {
     font-size: 3.6rem;
     text-transform: uppercase;
+    width: 100%;
   }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
@@ -118,88 +120,70 @@ export default function About() {
           <div className="about__info__items">
             <div className="about__info__item">
               <h1 className="about__info__heading">Education</h1>
-
-              <AboutInfoItems
-                title=" Primary"
-                items={['Juan de Coria Bohórquez - 1993 to 1999']}
-              />
-              <AboutInfoItems
+              <AboutInfoItem
                 title="Secondary"
                 items={[
                   'Graduated in Economy and Business Management / I.S.E.P - 2000 to 2004',
                 ]}
               />
-              <AboutInfoItems
+              <AboutInfoItem
                 title="Collage"
                 items={[
                   'Computer Sciences Engineering / Mendoza University - 2005 to 2007',
                 ]}
               />
-              <AboutInfoItems
-                title="Collage"
+              <AboutInfoItem
+                title=""
                 items={[
                   'Bachelor’s Degree in Business Administration / Pontificia Católica Argentina University UCA - 2008 to 2013',
                 ]}
               />
-              <AboutInfoItems
-                title="Varsity"
+              <AboutInfoItem
+                title="University"
                 items={[
                   'Master of Business Administration (MBA) / Francisco de Vitoria University (Madrid) - 2014 to 2016',
                 ]}
               />
             </div>
             <div className="about__info__item">
-              <h1 className="about__info__heading">Main Skills</h1>
-
-              <AboutInfoItems
+              <h1 className="about__info__heading">My Skills</h1>
+              <AboutInfoItem
                 title="FrontEnd"
-                items={[
-                  'HTML',
-                  'CSS',
-                  'JavaScript',
-                  'ReactJs',
-                  'React Native',
-                  'Redux',
-                  'React Navigation',
-                  'more...',
-                ]}
+                items={['HTML', 'CSS', 'JavaScript', 'ReactJs', 'React Native']}
               />
-
-              <AboutInfoItems
+              <AboutInfoItem
                 title="Design"
                 items={[
-                  'Photoshop',
-                  'After Effects',
+                  'Adobe XD',
+                  'Sketch',
                   'Premiere',
                   'Illustrator',
-                  'more...',
+                  'After Effects',
                 ]}
               />
-
-              <AboutInfoItems
+              <AboutInfoItem
                 title="Others"
                 items={[
                   'Git',
                   'Command prompt',
                   'API Rest',
-                  'Expo / React Native CLI',
-                  'Native Base / React Native Paper',
-                  'Others..',
+                  'Expo / RN CLI',
+                  'Native Base',
                 ]}
               />
             </div>
             {/* <div className="about__info__item">
               <h1 className="about__info__heading">Experiences</h1>
 
-              <AboutInfoItems
+              <AboutInfoItem
                 title="2010-2012"
                 items={['junior developer at web Cifar']}
               />
-              <AboutInfoItems
+              <AboutInfoItem
                 title="2012-2016"
                 items={['Front end developer at web Cifar ']}
               />
-              <AboutInfoItems
+              <AboutInfoItem
                 title="2016-"
                 items={['Freelance web Developer']}
               />
