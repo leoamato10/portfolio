@@ -102,7 +102,7 @@ export default function ContactForm() {
           </div>
           <div>
             {sendResult ? (
-              <h3 style={{ color: 'red', paddingTop: 15 }}>{sendResult}</h3>
+              <h3 style={{ color: 'green', paddingTop: 15 }}>{sendResult}</h3>
             ) : null}
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import ProjectImg from '../images/projectImg.png';
+import clima from '../images/clima.png';
 import UTrackerImg from '../images/utracker.jpg';
 import GreenCtgImg from '../images/greenctg.jpg';
 import CoinTrackerImg from '../images/cointracker.jpg';
@@ -8,38 +9,45 @@ import CavinImg from '../images/cavinimg.jpg';
 const projects = [
   {
     id: uuidv4(),
-    name: 'Climbing Loc',
+    name: 'PharmaGo+',
     desc:
-      'Climbing Loc helps people to find the most suitable climbing spot. Features: Gps, Navigation, Authentication, Global State, maps, more...',
+      'Automate delivery operations for pharma company. Features: authentication, Api handling, redux thunk, nested nav, more...',
     img: UTrackerImg,
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'Climbing Loc',
     desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
+      'Helps people to find the most suitable climbing spot. Features: Gps, Navigation, Authentication, Global State, maps, more...',
     img: GreenCtgImg,
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
+    name: '+Movil Comisiones',
     desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
+      'Helps to handle sells on mobile simcards. Features: code bar scanner, users roles, UI bar chart, RN Cli. ',
     img: CoinTrackerImg,
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
+    name: 'Contacts App',
     desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
+      'My first app y ever made. It utilices phone contacts API. Features: make calls, add, edit and delete contacts from your phone. UI native base.',
     img: CavinImg,
   },
   {
     id: uuidv4(),
-    name: 'Tracking Soft',
+    name: 'Personal Portfolio',
     desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
+      'Edited existing proyect made in ReatJs, with styled components, added some features like email sending in contact page.',
     img: ProjectImg,
+  },
+  {
+    id: uuidv4(),
+    name: 'More...',
+    desc:
+      'Lots of minors proyects like, classical ToDosApp, Wheather App, Some Native Android Works(kioskModeFeature) and on.',
+    img: clima,
   },
 ];
 
